@@ -5,13 +5,12 @@ import { Component } from '@angular/core';
 	template: `
 	  	<h1>{{title}}</h1>
 	  	<nav>
-	  		<!-- routerLink indicates a route path -->
-		  	<a routerLink='/dashboard'>Dashboard</a>
-		  	<a routerLink='/heroes'>Heros</a>
+		  	<a routerLink='/dashboard' routerLinkActive='active'>Dashboard</a>
+		  	<a routerLink='/heroes' routerLinkActive='active'>Heros</a>
 	  	</nav>
-	  	<!-- <router-outlet> is the tag where the route template is displayed -->
 	  	<router-outlet></router-outlet>
-	`
+	`,
+	styleUrls: [ './app.component.css' ]
 })
 
 export class AppComponent {
