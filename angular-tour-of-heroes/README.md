@@ -2,6 +2,10 @@
 
 ## Project Requirements
 
+When pulling this down from GitHub, the first thing to do is to install all 
+the node modules by doing:
+[npm install]
+
 Depends on NPM package angular-in-memory-web-api which must be installed.
 [npm install angular-in-memory-web-api]
 
