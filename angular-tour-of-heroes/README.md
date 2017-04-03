@@ -1,5 +1,12 @@
 # AngularTourOfHeroes
 
+## Project Requirements
+
+Depends on NPM package angular-in-memory-web-api which must be installed.
+[npm install angular-in-memory-web-api]
+
+## Angular2 Info
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.0.
 
 ## Development server
