@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 
-import { Menu } from 'app/menu.component';
+import { MenuComponent } from './menu.component';
 
 @Component({
   selector: 'menu-list'
@@ -21,13 +21,17 @@ import { Menu } from 'app/menu.component';
 })
 export class MenuListComponent {
 	about;
-	menus = new Array<Menu>();
+	menus : MenuComponent[];
 
-	@Input() menu: Menu;
+	@Input() aMenu: MenuComponent;
 	constructor() {
 		this.about = "About MenuComponent";
-		this.menus.push(new Menu('Menu1','/menu1', true));
-		this.menus.push(new Menu('Menu2','/menu2', true));
-		this.menus.push(new Menu('Menu3','/menu3', true));
+		this.menus = [
+			new MenuComponent('Menu1','/menu1', true)
+			,new MenuComponent('Menu2','/menu2', false)
+			,new MenuComponent('Menu3','/menu3', true)
+			,new MenuComponent('Menu4','/menu4', false)
+			,new MenuComponent('Menu5','/menu5', true)
+		];
 	}
 }
