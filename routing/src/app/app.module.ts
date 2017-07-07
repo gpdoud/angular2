@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
 import { AppRoutingModule } from './app-routing.module';
-
+import { ParameterComponent } from './parameter.component';
 
 
 @NgModule({
@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
     AppComponent
     ,HomeComponent
     ,AboutComponent
+    ,ParameterComponent
   ],
   imports: [
     BrowserModule
