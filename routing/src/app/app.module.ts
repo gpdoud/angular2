@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home.component';
 import { AboutComponent } from './about.component';
+import { AppRoutingModule } from './app-routing.module';
 
 
 
@@ -16,16 +17,7 @@ import { AboutComponent } from './about.component';
   ],
   imports: [
     BrowserModule
-	,RouterModule.forRoot([
-		{
-			path: 'home'
-			,component: HomeComponent
-		}
-		,{
-			path: 'about'
-			,component: AboutComponent
-		}
-	])
+	,AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
