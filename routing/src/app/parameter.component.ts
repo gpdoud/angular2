@@ -9,7 +9,7 @@ import 'rxjs/add/operator/switchMap';
 })
 export class ParameterComponent implements OnInit {
 	
-	private id;
+	public id;
 
 	constructor(
 		private route: ActivatedRoute
@@ -17,8 +17,9 @@ export class ParameterComponent implements OnInit {
 	) {}
 
 	ngOnInit() : void {
-		this.id = this.route.snapshot.paramMap.get('id');
-			// .switchMap(params: ParamMap) =>
-			// 	this.parameter = params.get('id');
+		// this.id = this.route.snapshot.paramMap.get('id');
+		this.route.paramMap
+			.switchMap((params: ParamMap) => params.get('id'))
+			.subscribe(id => this.id = id);
 	}
 }
